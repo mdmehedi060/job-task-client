@@ -4,6 +4,7 @@ import { useContext } from "react";
 import swal from "sweetalert";
 import Profile from "./Profile/Profile";
 
+
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -30,8 +31,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="shadow-md w-full my-6">
-      <div className="navbar font-serif text-black mx-auto max-w-6xl px-5 md:px-0 ">
+    <div className="shadow-md w-full ">
+      <div className="navbar font-serif text-[#482551] mx-auto max-w-6xl px-5 md:px-0 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className=" lg:hidden">
@@ -58,8 +59,8 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="w-3/4 md:w-1/2 flex gap-2">
-            <img className="w-[60px] h-[60px] rounded-full" src="https://i.ibb.co/hHgvhFM/logo.png" alt="" />
-            <h1 className="text-xl font-bold mx-auto">PH Job Task</h1>
+          <img className="w-[60px] h-[60px] rounded-full" src="https://i.ibb.co/hHgvhFM/logo.png" alt="" />
+            <h1>PH Job Task</h1>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -95,3 +96,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
